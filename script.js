@@ -136,7 +136,7 @@ function checkout() {
         return;
     }
     localStorage.removeItem('cart');
-    window.location.href = "https://shradzhiremath-ui.github.io/payment/";
+    window.location.href = 'index.html';
 }
 
 // Contact form
@@ -162,10 +162,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Checkout button
     const checkoutBtn = document.getElementById('checkoutBtn');
     if (checkoutBtn) {
-    checkoutBtn.addEventListener('click', function () {
-        window.location.href = "https://example.com/checkout"; // your URL here
-    });
+    checkoutBtn.addEventListener('click', checkout);
 }
+
 
     // Send message button
     const sendMessageBtn = document.getElementById('sendMessageBtn');
