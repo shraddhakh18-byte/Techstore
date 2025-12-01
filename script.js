@@ -135,9 +135,8 @@ function checkout() {
         alert('Your cart is empty!');
         return;
     }
-    alert('Order placed successfully!');
     localStorage.removeItem('cart');
-    window.location.href = 'https://shradzhiremath-ui.github.io/payment/';
+    window.location.href = "https://shradzhiremath-ui.github.io/payment/";
 }
 
 // Contact form
