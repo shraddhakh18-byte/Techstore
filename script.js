@@ -162,8 +162,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Checkout button
     const checkoutBtn = document.getElementById('checkoutBtn');
     if (checkoutBtn) {
-        checkoutBtn.addEventListener('click', checkout);
-    }
+    checkoutBtn.addEventListener('click', function () {
+        window.location.href = "https://example.com/checkout"; // your URL here
+    });
+}
 
     // Send message button
     const sendMessageBtn = document.getElementById('sendMessageBtn');
